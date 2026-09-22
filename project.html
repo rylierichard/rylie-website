@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: Supply Chain Analytics Dashboard | Rylie Richard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="nav-brand">Rylie<span>Richard</span></a>
+      <nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="project.html" class="active">Featured Project</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- Breadcrumb / Back Link -->
+      <div style="margin-top: 2rem;">
+        <a href="index.html" style="font-weight: 500; display: inline-flex; align-items: center; gap: 0.35rem;">
+          &larr; Back to Home
+        </a>
+      </div>
+
+      <!-- Project Hero Banner -->
+      <section class="project-header-box">
+        <div class="project-kicker">
+          <span class="badge">Featured Case Study</span>
+          <span class="badge badge-accent">ISDS 4125 Capstone</span>
+        </div>
+        <h1 class="project-main-title">Supply Chain & Inventory Analytics Dashboard</h1>
+        <p class="project-summary">
+          A web-based decision support system designed to give operations managers real-time visibility into warehouse inventory levels, stockout risks, and supplier reorder timelines.
+        </p>
+
+        <div class="project-meta-grid">
+          <div class="project-meta-item">
+            <h4>Role</h4>
+            <p>Lead Analyst & Front-End Developer</p>
+          </div>
+          <div class="project-meta-item">
+            <h4>Timeline</h4>
+            <p>12 Weeks (Fall 2024)</p>
+          </div>
+          <div class="project-meta-item">
+            <h4>Tech Stack</h4>
+            <p>HTML5, CSS3, JavaScript, SQL</p>
+          </div>
+          <div class="project-meta-item">
+            <h4>Category</h4>
+            <p>Information Systems & Analytics</p>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <a href="#overview" class="btn btn-primary">Read Case Study</a>
+          <a href="https://github.com/rylierichard" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View GitHub Repository</a>
+        </div>
+      </section>
+
+      <!-- Case Study Content -->
+      <div id="overview" class="project-section-block">
+        <div class="section-header">
+          <h2 class="section-title">The Challenge</h2>
+          <p class="section-description">Overcoming operational delays caused by disconnected tracking sheets.</p>
+        </div>
+        <p>
+          Mid-sized distribution warehouses frequently rely on fragmented spreadsheet trackers updated manually at different shift intervals. This lack of centralized visibility caused recurring inventory stockouts for high-demand SKUs, inaccurate replenishment lead time estimations, and lost revenue during peak shipment periods.
+        </p>
+        <p>
+          The objective of this initiative was to engineer a centralized web dashboard backed by a normalized relational database schema that offers real-time inventory threshold alerts and decision-ready data metrics.
+        </p>
+      </div>
+
+      <div class="project-section-block">
+        <div class="section-header">
+          <h2 class="section-title">Key Features & Solutions</h2>
+          <p class="section-description">Functionality designed to streamline inventory decisions.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-box">
+            <h3 class="card-title">Real-Time Stock Alerts</h3>
+            <p>
+              Automated color-coded indicators that flag when item counts fall below safety stock limits, prioritizing replenishment orders based on average weekly burn rate.
+            </p>
+          </div>
+          <div class="feature-box">
+            <h3 class="card-title">Supplier Performance Metrics</h3>
+            <p>
+              Interactive tables tracking vendor lead times, fulfillment error rates, and shipment delays to assist procurement specialists in supplier negotiations.
+            </p>
+          </div>
+          <div class="feature-box">
+            <h3 class="card-title">Responsive Dashboard</h3>
+            <p>
+              Built using semantic HTML5 and clean CSS grid layouts, allowing warehouse floor supervisors to view dashboards on tablets and mobile devices seamlessly.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section-block">
+        <div class="section-header">
+          <h2 class="section-title">System Architecture & Design</h2>
+          <p class="section-description">Bridging business logic with database and front-end design.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h3 class="card-title">Relational Database Modeling</h3>
+          <p>
+            Developed third-normal form (3NF) relational tables tracking Products, Warehouses, Suppliers, Inventory Transactions, and Purchase Orders. Designed primary and foreign key constraints to prevent data duplication and maintain relational integrity.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Analytical Query Optimization</h3>
+          <p>
+            Constructed complex SQL aggregation queries using joins, grouping, and window functions to compute inventory turnover ratios and identify slow-moving stock across specific seasonal windows.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-section-block">
+        <div class="section-header">
+          <h2 class="section-title">Results & Key Outcomes</h2>
+          <p class="section-description">Measurable impacts observed during testing simulations.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-title" style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.25rem;">40%</h3>
+            <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">Reduction in Reorder Processing Time</p>
+            <p>Eliminated manual spreadsheet reconciliation by unifying reorder requests into a single verified interface.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title" style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.25rem;">100%</h3>
+            <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">Stockout Alert Accuracy</p>
+            <p>Simulated test scenarios demonstrated immediate notification dispatch when SKU levels dropped below safety thresholds.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation Call to Action -->
+      <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center; margin: 3rem 0;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Interested in learning more about this project?</h3>
+        <p style="margin-bottom: 1.5rem;">Feel free to inspect my other work or get in touch for questions and details.</p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="resume.html" class="btn btn-secondary">Review My Resume</a>
+          <a href="index.html#contact" class="btn btn-primary">Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Rylie Richard. All rights reserved.</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Mobile Navigation Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
