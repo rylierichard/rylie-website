@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project: Supply Chain Analytics Dashboard | Rylie Richard</title>
+  <title>Project: NIST 800-53 Mapping Initiative | Rylie Richard</title>
+  <meta name="description" content="A compliance initiative mapping organizational policies and procedures to NIST SP 800-53 controls, identifying security gaps and centralizing policy rationale.">
   <link rel="stylesheet" href="styles.css">
   <!-- Apply saved theme before page renders to prevent flash -->
   <script>
@@ -35,8 +36,8 @@
       </nav>
       <!-- Dark / Light Mode Toggle -->
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-        <span class="icon-sun">☀️</span>
-        <span class="icon-moon">🌙</span>
+        <span class="icon-sun">&#9728;&#65039;</span>
+        <span class="icon-moon">&#127769;</span>
       </button>
     </div>
   </header>
@@ -55,29 +56,29 @@
       <section class="project-header-box">
         <div class="project-kicker">
           <span class="badge">Featured Case Study</span>
-          <span class="badge badge-accent">ISDS 4125 Capstone</span>
+          <span class="badge badge-accent">Cybersecurity &amp; Compliance</span>
         </div>
-        <h1 class="project-main-title">Supply Chain & Inventory Analytics Dashboard</h1>
+        <h1 class="project-main-title">NIST 800-53 Mapping Initiative</h1>
         <p class="project-summary">
-          A web-based decision support system designed to give operations managers real-time visibility into warehouse inventory levels, stockout risks, and supplier reorder timelines.
+          A structured compliance initiative mapping organizational policies and procedures directly to NIST SP 800-53 security controls &mdash; identifying coverage gaps, prioritizing improvements, and creating a centralized knowledge base that explains the purpose and rationale behind each policy.
         </p>
 
         <div class="project-meta-grid">
           <div class="project-meta-item">
             <h4>Role</h4>
-            <p>Lead Analyst & Front-End Developer</p>
+            <p>Compliance Analyst &amp; Policy Mapper</p>
           </div>
           <div class="project-meta-item">
-            <h4>Timeline</h4>
-            <p>12 Weeks (Fall 2024)</p>
+            <h4>Framework</h4>
+            <p>NIST SP 800-53 Rev. 5</p>
           </div>
           <div class="project-meta-item">
-            <h4>Tech Stack</h4>
-            <p>HTML5, CSS3, JavaScript, SQL</p>
+            <h4>Focus Areas</h4>
+            <p>Gap Analysis, Policy Governance, GRC</p>
           </div>
           <div class="project-meta-item">
             <h4>Category</h4>
-            <p>Information Systems & Analytics</p>
+            <p>Information Security &amp; Risk Management</p>
           </div>
         </div>
 
@@ -91,39 +92,39 @@
       <div id="overview" class="project-section-block">
         <div class="section-header">
           <h2 class="section-title">The Challenge</h2>
-          <p class="section-description">Overcoming operational delays caused by disconnected tracking sheets.</p>
+          <p class="section-description">Bridging the gap between internal policy and recognized security standards.</p>
         </div>
         <p>
-          Mid-sized distribution warehouses frequently rely on fragmented spreadsheet trackers updated manually at different shift intervals. This lack of centralized visibility caused recurring inventory stockouts for high-demand SKUs, inaccurate replenishment lead time estimations, and lost revenue during peak shipment periods.
+          Organizations often develop internal policies and procedures organically &mdash; responding to audits, incidents, or leadership directives &mdash; without systematically aligning them to a recognized security framework. This creates invisible gaps where real risks exist but are neither acknowledged nor addressed.
         </p>
         <p>
-          The objective of this initiative was to engineer a centralized web dashboard backed by a normalized relational database schema that offers real-time inventory threshold alerts and decision-ready data metrics.
+          The core challenge of this initiative was two-fold: first, determine which NIST 800-53 controls were already supported by existing policies; and second, surface the controls where no policy coverage existed at all. An equally important objective was creating a centralized repository so that any stakeholder &mdash; regardless of technical background &mdash; could understand <em>why</em> a policy exists, not just that it does.
         </p>
       </div>
 
       <div class="project-section-block">
         <div class="section-header">
-          <h2 class="section-title">Key Features & Solutions</h2>
-          <p class="section-description">Functionality designed to streamline inventory decisions.</p>
+          <h2 class="section-title">Key Features &amp; Deliverables</h2>
+          <p class="section-description">From raw policy documents to an actionable compliance map.</p>
         </div>
 
         <div class="grid-3">
           <div class="feature-box">
-            <h3 class="card-title">Real-Time Stock Alerts</h3>
+            <h3 class="card-title">Control-to-Policy Mapping</h3>
             <p>
-              Automated color-coded indicators that flag when item counts fall below safety stock limits, prioritizing replenishment orders based on average weekly burn rate.
+              Each company policy and procedure was systematically reviewed and cross-referenced against the NIST 800-53 control families &mdash; including Access Control (AC), Audit &amp; Accountability (AU), Risk Assessment (RA), and more.
             </p>
           </div>
           <div class="feature-box">
-            <h3 class="card-title">Supplier Performance Metrics</h3>
+            <h3 class="card-title">Gap Analysis Report</h3>
             <p>
-              Interactive tables tracking vendor lead times, fulfillment error rates, and shipment delays to assist procurement specialists in supplier negotiations.
+              Controls with no corresponding policy were flagged as gaps, categorized by severity and control family, and prioritized into a remediation roadmap with recommended policy language to close each gap.
             </p>
           </div>
           <div class="feature-box">
-            <h3 class="card-title">Responsive Dashboard</h3>
+            <h3 class="card-title">Centralized Policy Rationale Hub</h3>
             <p>
-              Built using semantic HTML5 and clean CSS grid layouts, allowing warehouse floor supervisors to view dashboards on tablets and mobile devices seamlessly.
+              Developed a structured knowledge base that pairs each policy with a plain-language explanation of the underlying security principle, the regulatory driver, and the real-world risk it mitigates.
             </p>
           </div>
         </div>
@@ -131,41 +132,58 @@
 
       <div class="project-section-block">
         <div class="section-header">
-          <h2 class="section-title">System Architecture & Design</h2>
-          <p class="section-description">Bridging business logic with database and front-end design.</p>
+          <h2 class="section-title">Methodology &amp; Approach</h2>
+          <p class="section-description">A structured, repeatable process built for accuracy and transparency.</p>
         </div>
 
         <div class="card" style="margin-bottom: 1.5rem;">
-          <h3 class="card-title">Relational Database Modeling</h3>
+          <h3 class="card-title">Policy Inventory &amp; Taxonomy</h3>
           <p>
-            Developed third-normal form (3NF) relational tables tracking Products, Warehouses, Suppliers, Inventory Transactions, and Purchase Orders. Designed primary and foreign key constraints to prevent data duplication and maintain relational integrity.
+            All existing organizational policies were collected, catalogued, and categorized by domain (e.g., access management, incident response, data classification). Each document was reviewed for scope, enforcement language, and the security objective it intended to achieve.
+          </p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h3 class="card-title">NIST 800-53 Control Mapping</h3>
+          <p>
+            Leveraging NIST SP 800-53 Rev. 5's full control catalog, each policy was mapped to one or more applicable controls using a structured crosswalk matrix. Mapping decisions were documented with justification notes to ensure auditability and repeatability.
           </p>
         </div>
 
         <div class="card">
-          <h3 class="card-title">Analytical Query Optimization</h3>
+          <h3 class="card-title">Gap Identification &amp; Prioritization</h3>
           <p>
-            Constructed complex SQL aggregation queries using joins, grouping, and window functions to compute inventory turnover ratios and identify slow-moving stock across specific seasonal windows.
+            Controls with zero policy coverage were identified as gaps. Each gap was assessed for potential impact using a risk-based scoring approach, yielding a tiered remediation roadmap that helped leadership prioritize policy development efforts.
           </p>
         </div>
       </div>
 
       <div class="project-section-block">
         <div class="section-header">
-          <h2 class="section-title">Results & Key Outcomes</h2>
-          <p class="section-description">Measurable impacts observed during testing simulations.</p>
+          <h2 class="section-title">Results &amp; Key Outcomes</h2>
+          <p class="section-description">Tangible improvements to the organization's compliance posture.</p>
         </div>
 
         <div class="grid-2">
           <div class="card">
-            <h3 class="card-title" style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.25rem;">40%</h3>
-            <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">Reduction in Reorder Processing Time</p>
-            <p>Eliminated manual spreadsheet reconciliation by unifying reorder requests into a single verified interface.</p>
+            <h3 class="card-title" style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.25rem;">100%</h3>
+            <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">Policy-to-Control Coverage Visibility</p>
+            <p>Every existing policy was traced to one or more NIST 800-53 controls, creating a complete and auditable compliance map for the first time.</p>
           </div>
           <div class="card">
-            <h3 class="card-title" style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.25rem;">100%</h3>
-            <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">Stockout Alert Accuracy</p>
-            <p>Simulated test scenarios demonstrated immediate notification dispatch when SKU levels dropped below safety thresholds.</p>
+            <h3 class="card-title" style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.25rem;">Gaps Surfaced</h3>
+            <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">Prioritized Remediation Roadmap</p>
+            <p>Previously unaddressed control families were identified and ranked by risk impact, giving leadership a clear, data-driven action plan for improving security posture.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title" style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.25rem;">Centralized</h3>
+            <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">Single Source of Truth for Policy Rationale</p>
+            <p>Stakeholders across teams can now reference the knowledge hub to understand the "why" behind each policy, increasing awareness and voluntary compliance.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title" style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.25rem;">Repeatable</h3>
+            <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">Scalable Mapping Framework</p>
+            <p>The crosswalk methodology and documentation templates are reusable, allowing future policy additions or framework updates to be incorporated efficiently.</p>
           </div>
         </div>
       </div>
@@ -173,7 +191,7 @@
       <!-- Bottom Navigation Call to Action -->
       <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center; margin: 3rem 0;">
         <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Interested in learning more about this project?</h3>
-        <p style="margin-bottom: 1.5rem;">Feel free to inspect my other work or get in touch for questions and details.</p>
+        <p style="margin-bottom: 1.5rem;">Feel free to review my resume or get in touch for questions and details.</p>
         <div class="btn-group" style="justify-content: center;">
           <a href="resume.html" class="btn btn-secondary">Review My Resume</a>
           <a href="index.html#contact" class="btn btn-primary">Contact Me</a>
@@ -200,4 +218,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
