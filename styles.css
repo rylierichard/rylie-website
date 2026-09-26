@@ -41,7 +41,7 @@
   --nav-bg: #240a40;              /* Dark purple navigation */
   --footer-bg: #1e0736;           /* Dark purple footer */
 
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Times New Roman", Times, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
