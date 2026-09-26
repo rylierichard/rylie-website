@@ -132,6 +132,185 @@
 [data-theme="dark"] .theme-toggle .icon-sun  { display: none; }
 [data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 
+/* ===== Nav Search Bar ===== */
+.nav-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-left: 0.5rem;
+}
+
+.search-icon-btn {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-full);
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  flex-shrink: 0;
+  transition: var(--transition);
+  outline: none;
+  z-index: 2;
+}
+
+.search-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-icon-btn:focus-visible {
+  box-shadow: 0 0 0 2px #d8b4fe;
+}
+
+.nav-search.is-open .search-icon-btn {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+/* Expanding input wrapper */
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, margin 0.3s ease;
+  margin-left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+}
+
+.nav-search.is-open .search-input-wrapper {
+  max-width: 220px;
+  opacity: 1;
+  pointer-events: auto;
+  margin-left: 0.4rem;
+}
+
+.nav-search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+  padding: 0.45rem 0.25rem 0.45rem 0.85rem;
+  width: 175px;
+  caret-color: #d8b4fe;
+}
+
+.nav-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-search-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-clear-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.45rem 0.75rem 0.45rem 0.25rem;
+  line-height: 1;
+  transition: color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.search-clear-btn:hover {
+  color: #ffffff;
+}
+
+/* Search results dropdown */
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  min-width: 260px;
+  background: var(--nav-bg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  display: none;
+  z-index: 200;
+  backdrop-filter: blur(12px);
+}
+
+.search-dropdown.has-results {
+  display: block;
+  animation: fadeInMenu 0.18s ease;
+}
+
+.search-result-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  transition: background 0.15s ease;
+  text-decoration: none;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover,
+.search-result-item:focus {
+  background: rgba(216, 180, 254, 0.12);
+  outline: none;
+}
+
+.search-result-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f3e8ff;
+}
+
+.search-result-excerpt {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-result-item .search-match {
+  background: rgba(216, 180, 254, 0.3);
+  color: #f3e8ff;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.search-no-results {
+  padding: 0.85rem 1rem;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+}
+
+/* Page highlight flash for search-jumped sections */
+.search-highlight-flash {
+  animation: searchFlash 1.5s ease forwards;
+}
+
+@keyframes searchFlash {
+  0%   { background-color: rgba(216, 180, 254, 0.18); }
+  60%  { background-color: rgba(216, 180, 254, 0.10); }
+  100% { background-color: transparent; }
+}
+
 /* Base Reset & Typography */
 * {
   box-sizing: border-box;
